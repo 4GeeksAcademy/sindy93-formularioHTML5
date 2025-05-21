@@ -32,21 +32,25 @@
 <div class="row">
 
 <!-- Fila: CARD #, CVC, AMOUNT -->
-<div class="col-md-6">
-    <label class="form-label fw-bold" for="card">Card #</label>
-    <input type="text" class="form-control my-2" id="card" name="card" placeholder="XXXXXXXXXXXXXXXXXXXX">
+<div class="col-md-5">
+    <fieldset>
+        <label class="form-label fw-semibold" for="card">Card #</label>
+        <input type="text" class="form-control my-2" id="card" name="card" placeholder="XXXXXXXXXXXXXXXXXXXX">
+    </fieldset>
 </div>
    
 
 <div class="col-md-3">
-    <label class="form-label fw-bold" for="cvc">CVC #</label>
-    <input type="text" class="form-control my-2" id="cvc" name="cvc" placeholder="0000">
+    <fieldset>
+        <label class="form-label fw-semibold" for="cvc">CVC #</label>
+        <input type="password" class="form-control my-2" id="cvc" name="cvc" placeholder="0000">
+    </fieldset>
 </div>
 
    
 
-<div class="col-md-3">
-    <label class="form-label fw-bold" for="amount">Amount</label>
+<div class="col-md-4">
+    <label class="form-label fw-semibold" for="amount">Amount</label>
 <div class="input-group my-2">
     <span class="input-group-text border-0 bg-transparent">
     <i class="fa-solid fa-dollar-sign"></i>
@@ -55,16 +59,14 @@
 </div>
 </div>
 
-<!-- Fila: FirstName Y LastName -->
-
-<div class="row">  
+<!-- Fila: FirstName Y LastName --> 
 <div class="col-md-6">
-    <label for="firstName" class="form-label fw-bold">First Name</label>
+    <label for="firstName" class="form-label fw-semibold">First Name</label>
     <input type="text" id="firstName" class="form-control my-2">
 </div>
 
 <div class="col-md-6">
-    <label for="lastName" class="form-label fw-bold">Last Name</label>
+    <label for="lastName" class="form-label fw-semibold">Last Name</label>
     <input type="text" id="lastName" class="form-control my-2">
 </div>
 </div>
@@ -74,13 +76,13 @@
 <div class="row">  
 
 <div class="col-md-6 fw-semibold ">
-    <label class="form-label fw-bold" for="city">City</label>
+    <label class="form-label fw-semibold" for="city">City</label>
     <input type="text" class="form-control my-2" id="city" placeholder="City">
 </div>
    
 
 <div class="col-md-3">
-<label for="state" class="form-label fw-bold">State</label>
+<label for="state" class="form-label fw-semibold">State</label>
 <select id="state" class="form-select my-2" aria-label="Default select example">
     <option selected disabled>Pick a State</option>
     <option value="1">Panamá</option>
@@ -92,7 +94,7 @@
 
 
 <div class="col-md-3">
-    <label class="form-label fw-bold" for="PostalCode">Postal Code</label>
+    <label class="form-label fw-semibold" for="PostalCode">Postal Code</label>
 <div class="input-group">
     <input type="text" class="form-control my-2" id="PostalCode">
 </div>
@@ -101,9 +103,9 @@
 
 <!-- Fila: Tarjetas aceptadas + Mensage -->
 <div class="row">
-<div class="col-md-4 my-2">
-  <p class="fw-bold">We accept:</p>
-<div class="bg-secondary p-2 rounded d-flex justify-content-between" id="WeAccept" style="max-width: 400px; gap: 10px;">
+<div class="col-md-3 my-2">
+  <p class="fw-semibold">We accept:</p>
+<div class="bg-secondary p-2 rounded d-flex justify-content-between" id="WeAccept" style=" gap: -10px;">
 
   
 <label class="d-flex align-items-center text-white"  style="gap: 5px;">
@@ -133,15 +135,15 @@
 </div>
 
 <!-- Columna para el textarea -->
-<div class="col-md-6 offset-md-2 mb-3">
-    <label class="form-label fw-bold" for="message">Message</label>
+<div class="col-md-6 offset-md-3 mb-3">
+    <label class="form-label fw-semibold" for="message">Message</label>
     <textarea class="form-control" id="message" rows="3"></textarea>
     <small class="form-text text-muted">Add any notes here.</small>
 </div>
 </div>
 </div> 
 </div>
-</div>
+
  <!-- Fotter del formulario -->
 <div class="card-footer text-body-secondary">
    <div class="text-end">
@@ -149,6 +151,10 @@
     <button type="button" class="btn btn-primary">Primary</button>
 </div>
 </div>
+</div>
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
